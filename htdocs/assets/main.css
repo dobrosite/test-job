@@ -1,0 +1,28 @@
+#upload {
+    width: 400px;
+    margin: 0 auto;
+    float: left;
+}
+
+#gallery {
+    margin-left: 405px;
+}
+
+.arrows {
+    height: 20px
+}
+
+#gallery img {
+    max-width: 400px;
+    max-height: 360px;
+}
+
+#gallery div {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+    border: solid 1px #888;
+    padding: 5px;
+    text-align: center;
+    float: left;
+}

@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Галерея</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="assets/app.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+    <div id="upload">
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            Загрузить файл<br/><br/>
+            <input type="file" name="file">
+            <input type="submit" value="Загрузить">
+        </form>
+    </div>
+    <div id="gallery">
+        {% for image in images %}
+            <div draggable="true">
+                <img src=uploads/{{ image.image }}>
+                <p class="arrows">
+                    <a href="#" onclick="return moveLeft('{{ image.sort }}', this)">←</a>
+                    <a href="#" onclick="return moveRight('{{ image.sort }}', this)">→</a>
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

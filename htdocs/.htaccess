@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^index.php$ - [last]
+RewriteRule ^$ index.php [last]
+RewriteRule .*\.php$ index.php [last]

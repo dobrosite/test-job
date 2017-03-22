@@ -1,0 +1,14 @@
+{
+    "name": "dobrosite/test-job",
+    "description": "Тестовое задание для разработчиков",
+    "license": "none",
+    "config": {
+        "bin-dir": "bin"
+    },
+    "require": {
+        "php": ">=5.5",
+        "doctrine/dbal":"~2.2",
+        "twig/twig": "^2.0",
+        "silex/silex": "^2.0"
+    }
+}
